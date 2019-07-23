@@ -68,6 +68,40 @@
 		</div>
 
 	</section>
+	<section class="dprocess">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-sm-6">
+					<h3>design process</h3>
+					<h2>There are four stages
+						I follow during the process</h2>
+				</div>
+				<div class="col-12 col-sm-6 pcards">
+					<div class="card-p card-p-active">
+						<h5><span>1</span>Research</h5>
+						<p>Knowing clients pain, goals, and wishes — this is were work started. I must know your customer to deliver the best experiences. I analyze both your business and your clients and determine goals based on that research.
+						</p>
+					</div>
+					<div class="card-p">
+						<h5><span>2</span>Development</h5>
+						<p>This stage includes information architecture and interaction design works. I create prototypes and give a look for your app and wrap it into the design language. You'll get your app designed. All screens, transitions, pop-ups, from black-n-white prototype to hi-fi mockups.
+						</p>
+					</div>
+					<div class="card-p">
+						<h5><span>3</span>Production</h5>
+						<p>For quick and easy implementation, I prepare all sources for your team. You'll get all files in cloud, UI kits and style guides so you can start developing your new project immediately.
+						</p>
+					</div>
+					<div class="card-p">
+						<h5><span>4</span>Support</h5>
+						<p>I'm not leaving my work at the middle. You can rely on my support for your project on future interactions and versions.
+						</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
 	<a name="cases"></a>
 
 	<section>
@@ -126,6 +160,17 @@
 
 	</div>
 	<script src="js/scripts.min.js"></script>
+<script>
+	const ACTIVE_CLASS = 'card-p-active';
 
+	let $parent = $('.pcards'),
+					$item = $parent.find('.card-p');
+
+	$item.click(function() {
+		$item.removeClass(ACTIVE_CLASS);
+		$(this).toggleClass(ACTIVE_CLASS);
+	})
+
+</script>
 </body>
 </html>
